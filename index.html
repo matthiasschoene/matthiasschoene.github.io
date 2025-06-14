@@ -6,7 +6,6 @@
     <title>Vektorrechnung Selbstlernkurs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- MathJax für die korrekte Darstellung von LaTeX-Formeln -->
     <script type="text/javascript" id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -117,15 +116,12 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <div id="app" class="container">
-        <!-- Header Section -->
         <header class="header">
             <h1 class="text-3xl font-bold mb-2">Vektorrechnung & Analytische Geometrie</h1>
             <p class="text-lg">Interaktiver Selbstlernkurs für den Mathematik Leistungskurs (11. Klasse)</p>
         </header>
 
-        <!-- Navigation and Content Area -->
         <div class="flex flex-col lg:flex-row gap-4">
-            <!-- Sidebar for Navigation -->
             <aside class="lg:w-1/4 bg-white p-4 rounded-xl shadow-lg">
                 <h2 class="text-xl font-semibold mb-4">Lernpfad</h2>
                 <nav>
@@ -140,16 +136,13 @@
                         <li class="mb-2"><button class="nav-button w-full" onclick="showSection('skalar_vektorprodukt')">5. Skalar- & Vektorprodukt</button></li>
                         <li class="mb-2"><button class="nav-button w-full" onclick="showSection('schnittwinkel_abstaende')">6. Schnittwinkel & Abstände</button></li>
                         <li class="mb-2"><button class="nav-button w-full" onclick="showSection('anwendung')">7. Anwendungen</button></li>
-                        <li class="mb-2"><button class="nav-button w-full" onclick="showSection('ai_assistant')">KI-Assistent ✨</button></li>
                         <li class="mb-2"><button class="nav-button w-full" onclick="showSection('quiz')">Interaktives Quiz</button></li>
                         <li class="mb-2"><button class="nav-button w-full" onclick="showSection('zusammenfassung')">Zusammenfassung & Weiteres</button></li>
                     </ul>
                 </nav>
             </aside>
 
-            <!-- Main Content Area -->
             <main class="lg:w-3/4 bg-white p-6 rounded-xl shadow-lg">
-                <!-- Lernziele & Kompetenzen Section -->
                 <section id="ziele" class="content-section">
                     <h2 class="text-2xl font-bold mb-4">Lernziele & zu erwerbende Kompetenzen</h2>
                     <div class="module-card">
@@ -203,18 +196,16 @@
                     </div>
                 </section>
 
-                <!-- Vorwissen Section -->
                 <section id="vorwissen" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">Vorwissen</h2>
                     <div class="module-card">
                         <h3 class="text-xl font-semibold mb-2">Lösen linearer Gleichungssysteme</h3>
                         <p class="mb-2">Bevor wir in die Vektorrechnung eintauchen, ist es wichtig, dass du lineare Gleichungssysteme (LGS) sicher lösen kannst. Dies ist eine grundlegende Fähigkeit, die in vielen Bereichen der Vektorrechnung benötigt wird.</p>
-                        <p class="mb-2">Du solltest in der Lage sein, LGS sowohl von Hand als auch mit dem grafikfähigen Taschenrechner (GTR) zu lösen und das Lösungsverhalten (eindeutige Lösung, unendlich viele Lösungen, keine Lösung) zu interpretieren.</p>
+                        <p class="mb-2">Du solltest in der Lage sein, LGS sowohl von Hand als auch mit dem grafikfähigen Taschenrechner (GTR) bzw. Geogebra zu lösen und das Lösungsverhalten (eindeutige Lösung, unendlich viele Lösungen, keine Lösung) zu interpretieren.</p>
                         <p class="mt-2">🔗 <a href="https://bit.ly/sklgs" target="_blank">Übungsaufgaben zu linearen Gleichungssystemen</a></p>
                     </div>
                 </section>
                 
-                <!-- Überblick Section -->
                 <section id="ueberblick" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">Überblick</h2>
                     <div class="module-card">
@@ -224,7 +215,6 @@
                     </div>
                 </section>
 
-                <!-- Vektoren im Raum Section -->
                 <section id="vektoren" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">1. Vektoren im räumlichen Koordinatensystem</h2>
                     <div class="module-card">
@@ -256,7 +246,6 @@
                     </div>
                 </section>
 
-                <!-- Eigenschaften von Vektoren Section -->
                 <section id="eigenschaften" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">2. Eigenschaften von Vektoren</h2>
                     <div class="module-card">
@@ -271,7 +260,10 @@
                         <div class="math-formula">
                             $$\begin{pmatrix} 6 \\ 3 \\ -4 \end{pmatrix} - \begin{pmatrix} 1 \\ -7 \\ 2 \end{pmatrix} = \begin{pmatrix} 6-1 \\ 3-(-7) \\ -4-2 \end{pmatrix} = \begin{pmatrix} 5 \\ 10 \\ -6 \end{pmatrix}$$
                         </div>
-                        <p class="mt-2">Jeder Vektor besitzt einen Gegenvektor (additive Inverses). Der Nullvektor lässt bei Addition den Vektor gleich (neutrales Element).</p>
+                        <a title="Jacek FH, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Wektory_sumt.svg"><img width="512" alt="Wektory sumt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Wektory_sumt.svg/256px-Wektory_sumt.svg.png?20070906005637"></a>
+                        <p class="mt-2">Jeder Vektor besitzt einen Gegenvektor (additive Inverses). Der Nullvektor lässt bei Addition den Vektor gleich (neutrales Element). Haben mathematische Objekte diese Eigenschaften nennt man sie Gruppe. 
+                            Vektoren bilden also bezüglich der Addition eine Gruppe, genauer abelsche Gruppe, da sie außerdem kommutativ ist.
+                        </p>
                     </div>
                     <div class="module-card">
                         <h3 class="text-xl font-semibold mb-2">Multiplikation mit einem Skalar</h3>
@@ -280,10 +272,10 @@
                             $$5 \cdot \begin{pmatrix} 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 5 \cdot 1 \\ 5 \cdot 2 \end{pmatrix} = \begin{pmatrix} 5 \\ 10 \end{pmatrix}$$
                             $$\lambda \cdot \begin{pmatrix} 5 \\ 3 \\ 7 \end{pmatrix} = \begin{pmatrix} \lambda \cdot 5 \\ \lambda \cdot 3 \\ \lambda \cdot 7 \end{pmatrix}$$
                         </div>
+                        <a title="Silly rabbit, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Scalar_multiplication_of_vectors2.svg"><img width="512" alt="Scalar multiplication of vectors2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Scalar_multiplication_of_vectors2.svg/512px-Scalar_multiplication_of_vectors2.svg.png?20160313135956"></a>
                         <p class="mb-2">Für Vektoren gelten Distributivgesetze und das Assoziativgesetz bezüglich der Skalarmultiplikation. Alle Klassen von mathematischen Objekten, die diese Eigenschaften erfüllen, nennt man Vektorräume.</p>
                     </div>
 
-                    <!-- Neue Sektion für die PhET-Simulation -->
                     <div class="module-card">
                         <h3 class="text-xl font-semibold mb-2">Interaktive Simulation: Vektoraddition</h3>
                         <p class="mb-2">Experimentiere mit der interaktiven Simulation von PhET Colorado, um ein besseres Verständnis für Vektoraddition, Subtraktion und Skalarmultiplikation zu entwickeln. Du kannst Vektoren ziehen, ihre Komponenten ändern und die resultierenden Summen visualisieren.</p>
@@ -304,26 +296,33 @@
 
                 </section>
 
-                <!-- Linearkombination Section -->
                 <section id="linearkombination" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">3. Linearkombination von Vektoren</h2>
                     <div class="module-card">
                         <p class="mb-2">Eine Linearkombination von Vektoren ist eine Summe von Vektoren (Vektoraddition), wobei jeder Vektor noch mit einer reellen Zahl (dem sogenannten Linearfaktor) multipliziert werden kann. Das Ergebnis davon ist wieder ein Vektor.</p>
+                        <a title="Svjo, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Linjcomb.png"><img width="512" alt="Linear combination" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Linjcomb.png?20190624223119"></a>
                         <div class="math-formula">
                             $$\vec{u} = a \cdot \vec{v_1} + b \cdot \vec{v_2} + c \cdot \vec{v_3}$$
                             <p class="mt-2">Hierbei sind $a, b$ und $c \in \mathbb{R}$.</p>
                         </div>
-                        <p class="mb-2">Beispiel: Der Vektor $$\begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix}$$ soll als Linearkombination der Vektoren $$\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$$, $$\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$$ und $$\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$$ geschrieben werden. Eine Möglichkeit dafür ist:</p>
+                        <p class="mb-2">Beispiel: Der Vektor $$\begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix}$$ soll als Linearkombination der Vektoren 
+                        <div class="math-formula">
+                            $$ \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} , \quad  \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$$
+                        </div> 
+                        geschrieben werden. Diese Vektoren sind die sogenannten Einheitsvektoren, da sie die Länge 1 haben und jeweils in die Richtung einer Koordinatenachse zeigen. Die richtige Kombination ist:</p>
                         <div class="math-formula">
                             $$\begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix} = 3 \cdot \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} + 4 \cdot \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} + 5 \cdot \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$$
                         </div>
-                        <p class="mb-2">Die Menge aller Linearkombinationen, die durch Vektoren gebildet werden können, bezeichnet man als Spann dieser Vektoren $span(\vec{v_1}, \cdots, \vec{v_n})$. $\vec{u} \in span(\vec{v_1}, \cdots, \vec{v_n})$ heißt also, dass sich $\vec{u}$ als Linearkombination der Vektoren schreiben lässt.</p>
-                        <p class="mt-2"><b>Übung:</b> Stelle den Vektor $$\begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix}$$ als Linearkombination der Vektoren $$\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$$, $$\begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}$$ und $$\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$$ dar. Löse mit Hilfe des Taschenrechners!</p>
+                        <p class="mb-2">Die Menge aller Linearkombinationen, die durch Vektoren gebildet werden können, bezeichnet man als Spann (engl. span) oder lineare Hülle dieser Vektoren $span(\vec{v_1}, \cdots, \vec{v_n})$. $\vec{u} \in span(\vec{v_1}, \cdots, \vec{v_n})$ heißt also, dass sich $\vec{u}$ als Linearkombination der Vektoren schreiben lässt.</p>
+                        <p class="mt-2"><b>Übung:</b> Stelle den Vektor $$\begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix}$$ als Linearkombination der Vektoren 
+                          <div class="math-formula">
+                            $$\cdot \begin{pmatrix} 1 \\ 1 \\ 1  \end{pmatrix} , \quad  \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}, \quad \begin{pmatrix} 1 \\ 2 \\ 1\end{pmatrix}$$
+                        </div> 
+                         dar. Löse mit Hilfe des Taschenrechners/iPads!</p>
                         <p class="mt-2">🔗 <a href="https://bit.ly/linabh" target="_blank">Lineare Abhängigkeit (Video)</a></p>
                     </div>
                 </section>
 
-                <!-- Analyse geometrischer Objekte Section -->
                 <section id="geometrische_objekte" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">4. Analyse geometrischer Objekte</h2>
                     <div class="module-card">
@@ -398,14 +397,19 @@
                     </div>
                 </section>
 
-                <!-- Skalar- und Vektorprodukt Section -->
                 <section id="skalar_vektorprodukt" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">5. Skalar- & Vektorprodukt</h2>
                     <div class="module-card">
                         <h3 class="text-xl font-semibold mb-2">Das Skalarprodukt</h3>
                         <p class="mb-2">Das Skalarprodukt von zwei Vektoren $$\vec{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$$ und $$\vec{b} = \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}$$ ist eine Zahl (Skalar), die wie folgt berechnet wird:</p>
                         <div class="math-formula">
-                            $$\vec{a} \circ \vec{b} = a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3$$
+                            $$\vec{a} \circ \vec{b} := \vec{a}^T\cdot\vec{b}= a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3$$
+                        </div>
+                        <p class="mb-2"><b>Definiton:</b> Der Doppelpunkt vor dem Gleichheitszeichen heißt "ist definiert durch". Hier ist es die Matrixmultiplikation, wobei der Vektor a in einen Zeilenvektor umgewandelt (transponiert T) werden muss. </p>
+                        <div class="math-formula">
+                            $$\vec{a} \circ \vec{b} = \vec{a}^T\cdot\vec{b}=\begin{pmatrix} a_1 & a_2 & a_3\end{pmatrix} \cdot \begin{pmatrix} b_1\\b_2\\b_3\end{pmatrix}$$
+                        <p class="mt-2">🔗 <a href="https://de.serlo.org/mathe/2009/matrizen" target="_blank">Matrizenmultiplikation</a> | 
+                        </p>
                         </div>
                         <p class="mb-2"><b>Geometrische Bedeutung:</b> Das Skalarprodukt ist ein Maß für die Übereinstimmung der Richtungen zweier Vektoren. Ist es positiv, zeigen die Vektoren tendenziell in die gleiche Richtung. Ist es negativ, zeigen sie in entgegengesetzte Richtungen. Ist es Null, stehen die Vektoren senkrecht zueinander (Orthogonalität).</p>
                         <div class="math-formula">
@@ -430,11 +434,10 @@
                         <p class="mt-2">🔗 <a href="https://bit.ly/vprodukt" target="_blank">Vektorprodukt (Video)</a> | 
                             <a href="https://de.serlo.org/mathe/1761/vektor-oder-kreuzprodukt" target="_blank">Vektorprodukt (Serlo)</a> | 
                             <a href="https://learningapps.org/view9112887" target="_blank">Übung Flächenberechnung (LearningApp)</a></p>
-                        <p class="mt-2"><b>Übung:</b> Warum gibt diese Formel den Flächeninhalt des Parallelogramms wieder? Tipp: Höhe.</p>
+                        <p class="mt-2"><b>Challenge (schwer!):</b> Warum gibt diese Formel den Flächeninhalt des Parallelogramms wieder? Tipp: Höhe.</p>
                     </div>
                 </section>
 
-                <!-- Schnittwinkel & Abstände Section -->
                 <section id="schnittwinkel_abstaende" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">6. Schnittwinkel & Abstände</h2>
                     <div class="module-card">
@@ -492,14 +495,13 @@
                     </div>
                 </section>
 
-                <!-- Anwendungen Section -->
                 <section id="anwendung" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">7. Anwendung der Vektorrechnung</h2>
                     <div class="module-card">
                         <h3 class="text-xl font-semibold mb-2">Spiegelung eines Punktes an einer Ebene</h3>
                         <p class="mb-2">Die Vektorrechnung findet Anwendung in vielen Bereichen, zum Beispiel bei der Spiegelung von Punkten an Ebenen. Um einen Punkt an einer Ebene zu spiegeln, kann man den Verbindungsvektor vom Punkt zur Ebene nutzen und diesen um den Normalenvektor der Ebene verlängern.</p>
                         <p class="mt-2">🔗 <a href="https://www.youtube.com/watch?v=uiu5UQNFsQU" target="_blank">Punkt an Ebene spiegeln (Video)</a></p>
-                        <img src="https://www.mathelike.de/images/stories/abi_check/geometrie/Spiegelung_Punkt_Ebene.png" alt="[Image von Punktspiegelung an Ebene]">                   
+                        <img src="https://www.mathelike.de/images/stories/abi_check/geometrie/Spiegelung_Punkt_Ebene.png" alt="[Bild von Punktspiegelung an Ebene]">                   
                     </div>
                     <div class="module-card">
                         <h3 class="text-xl font-semibold mb-2">Flächeninhaltsfunktion / Determinante</h3>
@@ -511,39 +513,21 @@
                         <div class="math-formula">
                             $$\vec{F} = q (\vec{v} \times \vec{B})$$
                         </div>
-                        <p class="mb-2">Hier zeigt sich, dass die Lorentzkraft immer senkrecht zur Geschwindigkeit und zum Magnetfeld steht. Dies hat zur Folge, dass die Lorentzkraft keine Arbeit verrichtet und somit die kinetische Energie eines Teilchens nicht ändern kann (da $\vec{F} \circ \vec{v} = 0$).</p>
-                    <a title="Ladyt at German Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:RHR.svg"><img width="512" alt="[Image der Rechte-Hand-Regel]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/RHR.svg/512px-RHR.svg.png?20111230153414"></a>
+                        <p class="mb-2">Hier zeigt sich, dass die Lorentzkraft immer senkrecht zur Geschwindigkeit und zum Magnetfeld steht. Dies hat zur Folge, dass die Lorentzkraft keine Arbeit verrichtet und somit die kinetische Energie eines Teilchens nicht ändern kann.</p>
+                        <p> <b> Übung:</b> Beweise dies mathematisch!</p>
+                        <p> <a href="proof.html" target ="_blank"> Beweis (wird auf einer neuen Seite geöffnet!)</a>
+                    <a title="Ladyt at German Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:RHR.svg"><img width="512" alt="[Bild der Rechte-Hand-Regel]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/RHR.svg/512px-RHR.svg.png?20111230153414"></a>
                     </div>
                 </section>
 
-                <!-- AI Assistant Section -->
-                <section id="ai_assistant" class="content-section hidden">
-                    <h2 class="text-2xl font-bold mb-4">KI-Assistent ✨</h2>
-                    <div class="module-card">
-                        <p class="mb-4">Stelle dem KI-Assistenten eine Frage zur Vektorrechnung, und er wird versuchen, dir zu helfen.</p>
-                        <textarea id="ai-question" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4 bg-gray-50 text-gray-800" rows="5" placeholder="Stelle hier deine Frage zur Vektorrechnung..."></textarea>
-                        <button id="ask-ai-button" class="nav-button w-full py-2">Frage stellen ✨</button>
-                        <div id="ai-response-container" class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg text-gray-800 hidden">
-                            <p id="ai-response-text" class="whitespace-pre-wrap"></p>
-                            <div id="ai-loading-indicator" class="flex items-center justify-center mt-2 hidden">
-                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
-                                <span class="ml-3 text-blue-600">Antwort wird generiert...</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Interaktives Quiz Section -->
                 <section id="quiz" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">Interaktives Quiz</h2>
                     <div id="quiz-container" class="module-card">
-                        <!-- Quizfragen werden hier dynamisch geladen -->
-                    </div>
+                        </div>
                     <button id="submit-quiz" class="nav-button mt-4 px-6 py-3 bg-green-600 hover:bg-green-700">Quiz abschicken</button>
                     <div id="quiz-result" class="mt-4 text-lg font-semibold"></div>
                 </section>
 
-                <!-- Zusammenfassung & Weiteres Section -->
                 <section id="zusammenfassung" class="content-section hidden">
                     <h2 class="text-2xl font-bold mb-4">Zusammenfassung & Weiteres</h2>
                     <div class="module-card">
@@ -752,159 +736,17 @@
     </script>
     <script type="module">
         // Import necessary Firebase modules
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDoc, onSnapshot, collection, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        // import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        // import { getFirestore, doc, setDoc, getDoc, onSnapshot, collection, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        let db;
-        let auth;
-        let userId;
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id'; // App ID abrufen
+        // Let the user know Firebase is not available in standalone HTML without proper setup
+        console.warn("Firebase-Integration ist in dieser eigenständigen HTML-Datei nicht funktionsfähig, da keine Firebase-Konfiguration oder Authentifizierungsinformationen bereitgestellt werden.");
+        console.warn("Diese Funktionalität erfordert eine spezifische Umgebung (z.B. Google Canvas oder ein eigenes Backend) für die Initialisierung.");
 
-        // Firebase initialisieren
-        try {
-            const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-            if (Object.keys(firebaseConfig).length > 0) {
-                const app = initializeApp(firebaseConfig);
-                db = getFirestore(app);
-                auth = getAuth(app);
-
-                // Anonym oder mit benutzerdefiniertem Token anmelden
-                const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
-                if (initialAuthToken) {
-                    signInWithCustomToken(auth, initialAuthToken)
-                        .then((userCredential) => {
-                            userId = userCredential.user.uid;
-                            console.log("Firebase erfolgreich mit benutzerdefiniertem Token authentifiziert:", userId);
-                            // Hier können Firestore-Listener oder Operationen hinzugefügt werden, die Authentifizierung erfordern
-                        })
-                        .catch((error) => {
-                            console.error("Firebase benutzerdefinierte Token-Anmeldung fehlgeschlagen:", error);
-                            signInAnonymously(auth)
-                                .then(() => {
-                                    userId = auth.currentUser.uid;
-                                    console.log("Firebase anonym angemeldet:", userId);
-                                })
-                                .catch((anonError) => {
-                                    console.error("Firebase anonyme Anmeldung fehlgeschlagen:", anonError);
-                                });
-                        });
-                } else {
-                    signInAnonymously(auth)
-                        .then(() => {
-                            userId = auth.currentUser.uid;
-                            console.log("Firebase anonym angemeldet:", userId);
-                        })
-                        .catch((error) => {
-                            console.error("Firebase anonyme Anmeldung fehlgeschlagen:", error);
-                        });
-                }
-            } else {
-                console.warn("Firebase-Konfiguration nicht bereitgestellt. Firestore ist nicht verfügbar.");
-            }
-        } catch (e) {
-            console.error("Fehler beim Initialisieren von Firebase:", e);
-        }
-
-        // Beispiel für Firestore-Nutzung (optional, für zukünftige Funktionen wie Fortschrittsverfolgung)
-        // async function saveProgress(module, progress) {
-        //     if (!db || !userId) {
-        //         console.warn("Firestore nicht initialisiert oder Benutzer nicht authentifiziert.");
-        //         return;
-        //     }
-        //     try {
-        //         const userDocRef = doc(db, `artifacts/${appId}/users/${userId}/courseProgress`, module);
-        //         await setDoc(userDocRef, { progress: progress }, { merge: true });
-        //         console.log("Fortschritt gespeichert:", module, progress);
-        //     } catch (e) {
-        //         console.error("Fehler beim Speichern des Fortschritts:", e);
-        //     }
-        // }
-
-        // async function loadProgress(module) {
-        //     if (!db || !userId) {
-        //         console.warn("Firestore nicht initialisiert oder Benutzer nicht authentifiziert.");
-        //         return null;
-        //     }
-        //     try {
-        //         const userDocRef = doc(db, `artifacts/${appId}/users/${userId}/courseProgress`, module);
-        //         const docSnap = await getDoc(userDocRef);
-        //         if (docSnap.exists()) {
-        //             console.log("Fortschritt geladen:", docSnap.data());
-        //             return docSnap.data().progress;
-        //         } else {
-        //             console.log("Kein Fortschritt für Modul gefunden:", module);
-        //             return null;
-        //         }
-        //     } catch (e) {
-        //         console.error("Fehler beim Laden des Fortschritts:", e);
-        //         return null;
-        //     }
-        // }
-
-        // JavaScript für den KI-Assistenten
-        document.addEventListener('DOMContentLoaded', () => {
-            const askAiButton = document.getElementById('ask-ai-button');
-            const aiQuestionTextarea = document.getElementById('ai-question');
-            const aiResponseContainer = document.getElementById('ai-response-container');
-            const aiResponseText = document.getElementById('ai-response-text');
-            const aiLoadingIndicator = document.getElementById('ai-loading-indicator');
-
-            askAiButton.addEventListener('click', async () => {
-                const prompt = aiQuestionTextarea.value.trim();
-                if (!prompt) {
-                    aiResponseText.textContent = 'Bitte gib eine Frage ein.';
-                    aiResponseContainer.classList.remove('hidden');
-                    aiResponseContainer.classList.add('bg-red-100', 'border-red-400', 'text-red-800');
-                    return;
-                }
-
-                // Show loading indicator and clear previous response
-                aiResponseText.textContent = '';
-                aiResponseContainer.classList.remove('bg-red-100', 'border-red-400', 'text-red-800');
-                aiResponseContainer.classList.remove('hidden');
-                aiLoadingIndicator.classList.remove('hidden');
-
-                try {
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: `Du bist ein erfahrener Mathematik-Tutor für den Bereich Vektorrechnung im Gymnasium (11. Klasse). Erkläre oder beantworte die folgende Frage zum Thema Vektorrechnung. Formeln sollen in LaTeX formatiert werden: ${prompt}` }] });
-                    const payload = { contents: chatHistory };
-                    const apiKey = ""; // API-Schlüssel wird zur Laufzeit von Canvas bereitgestellt.
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    const result = await response.json();
-
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        aiResponseText.textContent = text;
-                        // MathJax für den neuen Inhalt rendern
-                        if (typeof MathJax !== 'undefined' && typeof MathJax.typesetPromise === 'function') {
-                            MathJax.typesetPromise([aiResponseText]);
-                        } else {
-                            console.warn("MathJax.typesetPromise ist nicht verfügbar beim Versuch, die KI-Antwort zu setzen.");
-                        }
-                        aiResponseContainer.classList.add('bg-blue-50', 'border-blue-200', 'text-gray-800'); // Auf Info-Stil zurücksetzen
-                    } else {
-                        aiResponseText.textContent = 'Entschuldigung, ich konnte keine Antwort generieren. Bitte versuche es später noch einmal.';
-                        aiResponseContainer.classList.add('bg-red-100', 'border-red-400', 'text-red-800');
-                    }
-                } catch (error) {
-                    console.error('Fehler beim Abrufen der KI-Antwort:', error);
-                    aiResponseText.textContent = 'Ein Fehler ist aufgetreten. Bitte überprüfe deine Internetverbindung oder versuche es später noch einmal.';
-                    aiResponseContainer.classList.add('bg-red-100', 'border-red-400', 'text-red-800');
-                } finally {
-                    aiLoadingIndicator.classList.add('hidden'); // Ladeanzeige ausblenden
-                }
-            });
-        });
+        // Die ursprünglichen Firebase-Codeblöcke wurden auskommentiert, da sie für den
+        // KI-Assistenten und Firestore-Funktionen nicht mehr benötigt werden
+        // oder in einer Offline-/Standalone-Umgebung ohnehin nicht funktionieren würden.
     </script>
 </body>
 </html>
