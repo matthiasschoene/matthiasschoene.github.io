@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beweis: Lorentzkraft verrichtet keine Arbeit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .proof-container {
+            max-width: 800px;
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            width: 100%;
+        }
+        h1 {
+            color: #000080;
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h2 {
+            color: #000080;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .math-formula {
+            background-color: #f8fafc;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            font-size: 1.15rem;
+            overflow-x: auto;
+            border: 1px solid #e2e8f0;
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #4169E1;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #315BB1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="proof-container">
+        <h1>Beweis</h1>
+        <p>Um zu zeigen, dass die Lorentzkraft keine Arbeit an einem geladenen Teilchen verrichtet, müssen wir beweisen, dass das Skalarprodukt der Lorentzkraft $\vec{F}$ und des Geschwindigkeitsvektors $\vec{v}$ des Teilchens Null ist.
+        <p>Die Formel für die Lorentzkraft ist gegeben durch:</p>
+        <div class="math-formula">
+            $$\vec{F} = q (\vec{v} \times \vec{B})$$
+        </div>
+        <p>Hierbei ist:</p>
+        <ul class="list-disc list-inside ml-6 mb-4">
+            <li>$q$: die Ladung des Teilchens (Skalar)</li>
+            <li>$\vec{v}$: der Geschwindigkeitsvektor des Teilchens</li>
+            <li>$\vec{B}$: der Magnetfeldvektor</li>
+            <li>$\times$: das Vektorprodukt (Kreuzprodukt)</li>
+        </ul>
+
+        <p>Es gilt dann für die Arbeit</p>
+        <div class="math-formula">
+            $$A=\int \vec{F} \circ d\vec{s} = \int q (\vec{v} \times \vec{B}) \circ d\vec{s}=\int \vec{F} \circ d\vec{s} = \int q (\vec{v} \times \vec{B}) \circ v d\vec{t}=0$$
+        </div>
+        <p>
+        Dies gilt genau dann, wenn das Skalarprodukt der Lorentzkraft $\vec{F}$ und des Geschwindigkeitsvektors $\vec{v}$ Null ist, also wenn $\vec{F} \circ \vec{v} = 0$.</p>
+        <p> Um dies zu zeigen, berechnen wir das Skalarprodukt:</p>
+        <div class="math-formula">
+            $$\vec{F} \circ \vec{v} = (q (\vec{v} \times \vec{B})) \circ \vec{v}$$
+        </div>
+       
+        <p>Hierbei ist $q$ ein Skalar, der die Ladung des Teilchens darstellt, und $(\vec{v} \times \vec{B})$ ist der Vektor, der durch das Kreuzprodukt von $\vec{v}$ und $\vec{B}$ entsteht.</p>
+        <p>Nun betrachten wir den Ausdruck $((\vec{v} \times \vec{B}) \circ \vec{v})$. Das Skalarprodukt eines Vektors mit einem anderen Vektor, der orthogonal zu ihm ist, ist immer Null. Da das Kreuzprodukt $\vec{v} \times \vec{B}$ per Definition orthogonal zu beiden Vektoren $\vec{v}$ und $\vec{B}$ ist, folgt:</p>
+        <div class="math-formula">
+            $$(\vec{v} \times \vec{B}) \circ \vec{v} = 0$$
+        </div>
+        <p>Somit ist das Skalarprodukt der Lorentzkraft und des Geschwindigkeitsvektors Null:</p>
+        <div class="math-formula">
+            $$\vec{F} \circ \vec{v} = 0$$
+        </div>
+        <p>Dies bedeutet, dass die Lorentzkraft keine Arbeit an dem geladenen Teilchen verrichtet. Die Lorentzkraft wirkt immer senkrecht zur Bewegungsrichtung des Teilchens und lenkt es lediglich ab, ohne seine Geschwindigkeit zu ändern.</p>
+        
+    </div>
+</body>
+</html>
